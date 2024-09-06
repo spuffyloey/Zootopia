@@ -1,0 +1,108 @@
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0px;
+        padding: 0;
+    }
+
+    .container {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background-color: #ffffff;
+    }
+
+    .aboutsection {
+        margin: 20px;
+        text-align: left;
+    }
+
+    .section p{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .cards-contact {
+        text-align: left;
+        padding: 5px;
+    }
+
+    .titleabout {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 300px;
+        margin-right: 95px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content h1 {
+        font-size: 1em;
+        margin-top: 0%;
+        flex: 2;
+    }
+
+    .content p {
+        margin: 5px 5px;
+        font-size: 0.8em;
+    }
+
+    .content a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .footer-section {
+        flex: 1;
+        text-align: left;
+    }
+    
+    .footer-section.contact-info {
+        margin-right: 20px; /* Adjust margin as needed */
+    }
+    
+    .footer-section h3 {
+        font-size: 0.8em;
+        margin-bottom: 5px;
+    }
+    
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-section ul li {
+        margin-bottom: 5px;
+    }
+    
+    .footer-section ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .social-links li {
+        display: flex;
+        align-items: center;
+    }
+    
+    .social-links li img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+</style>

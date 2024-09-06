@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.Logo {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3em;
+    padding-left: 32px;
+}
+
+.nav a:hover {
+    color: blue;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    opacity: 90%;
+    align-items: center;
+    background: url(img/koala.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: azure;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: rgb(0, 0, 0);
+    font-size: 4em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: Georgia, serif;
+}
+
+.main-btn {
+    color: azure;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: rgb(50, 50, 104);
+    transform: scale(1.1);
+}
+
+.animal-btn {
+    color: azure;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: 0.7s ease;
+    position: relative;
+    top: -40px;
+}
+
+.ticket-btn {
+    color: rgb(0, 0, 0);
+    background-color: rgb(240, 255, 255); /* Make sure the background color is what you desire */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 20px; /* Adjust margin as needed */
+    transition: 0.7s ease;
+    position: relative; /* Set position to relative */
+    top: -80px; /* Adjust top position */
+}
+
+.ticket-btn:hover {
+    background-color: rgb(98, 98, 98);
+    transform: scale(1.1);
+}
+
+.animal-btn:hover {
+    background-color: rgb(50, 50, 104);
+    transform: scale(1.1);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.social a {
+    color: azure;
+    font-size: 2em;
+    padding-right: 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 2.3em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.title2 {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 2.3em;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.titleabout {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 2.3em;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background-color: azure;
+    width: 21.25em;
+    height: 24.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 13px;
+    transition: 0.7s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 5px;
+    font-family: Georgia, serif;
+}
+
+.tickets {
+    background-color: #000016;
+    padding: 100px 0;
+}
+
+.tickets .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.titleabout {
+    font-size: 45px;
+    margin-top: -40px;
+    text-align: center;
+}
+
+.aboutcontainer {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #ffffff;
+}
+.aboutsection {
+    margin: 20px;
+    text-align: left;
+}
+
+.zoologo {
+    width: 300px;
+    margin-right: 95px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-section.contact-info {
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+.footer-section h3 {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.social-links li {
+    display: flex;
+    align-items: center;
+}
+
+.social-links li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.more-details:hover {
+    color: #601cfc;
+}
+
+.dropbtn {
+    background-color: #0b0b0b;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position dropdown content below the button */
+    right: 0;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #000000;}
+
+  .active {
+    background-color: #fdfdfd;
+  }
+
+/* Mobile and Tablet View Adjustments */
+@media (max-width: 600px) {
+    /* Adjust the header */
+    header {
+        padding: 12px 20px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .Logo {
+        font-size: 1.5em; /* Reduce font size */
+        margin-bottom: 0;
+    }
+
+    .dropbtn {
+        font-size: 1.2em; /* Reduce font size */
+    }
+
+    /* Adjust dropdown button */
+    .dropdown {
+        margin-left: auto;
+    }
+
+    .dropdown-content {
+        right: 0;
+        min-width: 150px;
+        margin-top: 15px;
+        width: auto; /* Make the dropdown content full width */
+        box-shadow: none;
+    }
+
+    .dropdown-content a {
+        width: 100%;
+        text-align: left;
+        padding: 12px 16px;
+        box-sizing: border-box;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Adjust main section styles for smaller screens */
+    .main {
+        padding: 80px 20px; /* Adjust padding */
+        background-size: 800px auto; /* Set background size to 800px width and auto height */
+        background: url(img/koalabg.jpg) no-repeat;
+        background-position: center; /* Center the background image */
+        text-align: center; /* Center-align text */
+    }
+
+    .main h2 {
+        font-size: 1.5em; /* Increase font size */
+        margin-bottom: 20px; /* Increase spacing */
+    }
+
+    .main h3 {
+        font-size: 2em; /* Increase font size */
+        margin-bottom: 30px; /* Increase spacing */
+    }
+
+    .main-btn {
+        font-size: 1em; /* Reduce font size */
+        padding: 10px 20px; /* Adjust padding */
+        margin-bottom: 30px; /* Increase spacing */
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+    .title2 {
+        font-size: 1.8em;
+        text-align: center;   
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main-content h2 {
+        font-size: 1em;
+    }
+
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+
+    .titleabout {
+        font-size: 1.8em;
+    }
+
+    /* Adjust About Us section */
+    .aboutcontainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .zoologo {
+        width: 200px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .aboutsection {
+        margin: 0;
+        text-align: center;
+        max-width: 300px; /* Limit the width for smaller screens */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+        text-align: center; /* Center-align footer text */
+    }
+
+    .footer-section.contact-info {
+        margin-right: 0; /* Remove margin */
+    }
+
+    .footer-section h3 {
+        font-size: 1em; /* Increase font size */
+    }
+
+    .footer-section ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-section ul li a {
+        font-size: 1em; /* Increase font size */
+    }
+
+    .social-links li {
+        margin-bottom: 10px;
+    }
+
+    .social-links li a {
+        font-size: 1em; /* Increase font size */
+    }
+
+    .more-details {
+        font-size: 1em; /* Increase font size */
+    }
+}

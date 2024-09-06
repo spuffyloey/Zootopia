@@ -1,0 +1,292 @@
+/* Global Styles */
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url(img/otter\ background.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #000; /* Hex color code for consistency */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px; /* Adjust padding as needed */
+}
+
+.Logo {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5em;
+    padding-left: 32px;
+}
+
+.nav a:hover{
+    color: blue;
+}
+
+/* Login Container Styles */
+.login-container-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    padding-top: 60px; /* Adjust this padding to ensure it does not overlap with the header */
+    padding-right: 160px;
+    padding-left: 120px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login-container .form-group {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    background-color: #ffffff; /* Red color for clear button */
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.form-group input[type="text"] {
+    width: calc(100% - 30px);
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.clear-address-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: red;
+    margin-left: 5px;
+}
+
+.clear-address-btn i {
+    pointer-events: none;
+}
+
+
+/* Typography Styles */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -35px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button Styles */
+button.profile-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+button.profile-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button.delete-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: -70px;
+}
+
+button.delete-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+
+
+.error-message {
+    background-color: #ffe6e6;
+    color: red;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: -30px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.success-message {
+    background-color: #e6ffe6;
+    color: green;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: -30px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Links Styles */
+.links {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.links a {
+    text-decoration: none;
+    color: blue;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: red;
+}
+
+.links p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    /* Adjust the header */
+    body {
+        background: url(img/otter\ background.jpg) no-repeat;
+        justify-content: center;
+        align-items: flex-start;
+        height: auto;
+        margin: 0;
+        padding-top: 60px;
+        }
+
+        header {
+            padding: 12px 20px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .Logo {
+            font-size: 1.4em; /* Reduce font size */
+            margin-bottom: 0;
+        }
+        
+        .nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            width: auto;
+        }
+        
+        .nav a {
+            padding: 0 10px;
+            font-size: 1em;
+        }
+        
+        .nav.active {
+            display: flex;
+        } 
+        
+        .login-container-wrapper {
+            padding-top: 60px; /* Adjust padding to ensure it does not overlap with the header */
+            padding-right: 20px;
+            padding-left: 20px;
+            justify-content: center; /* Center the login container */
+            align-items: center; /* Center align the container */
+        }
+        
+        .login-container {
+            width: 100%;
+            max-width: 300px; /* Reduced max-width for mobile view */
+            padding: 20px; /* Reduced padding for better responsiveness */
+        }
+        
+        h2 {
+            font-size: 1.5em; /* Reduce font size for better fit */
+            margin-top: 0px; /* Adjust margin to fit better */
+            margin-bottom: 20px;
+        }
+        
+        button.profile-btn, button.delete-btn {
+            padding: 10px; /* Adjust button padding for better fit */
+        }
+        
+        .links {
+            text-align: center; /* Center align links on mobile */
+        }
+    }

@@ -1,0 +1,126 @@
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            background: url(img/panda.jpg) no-repeat center center/cover;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        header {
+            background-color: #000;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 200px;
+            margin-bottom: 60px;
+        }
+        .Logo {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.8em;
+        }
+        .nav {
+            display: flex;
+        }
+        .nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.5em;
+            padding-left: 32px;
+        }
+        .flex-container {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .container {
+            opacity: 90%;
+            width: 500px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: calc(60px + 20px); /* Adjusted for header space */
+            margin-bottom: 90px;
+            height: auto; /* Adjust the height as needed */
+            flex-grow: 1;
+        }
+        .container h1 {
+            margin-top: 0;
+        }
+        .container label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .container input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .container button {
+            padding: 10px 15px;
+            background-color: black;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .container button:hover {
+            background-color: grey;
+        }
+        .result {
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-size: auto auto; /* Set background size to 800px width and auto height */
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                margin: 0;
+                padding-top: 60px;
+            }
+            header {
+                padding: 12px 20px;
+                flex-direction: row;
+                align-items: center;
+            }
+            .nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                width: auto;
+            }
+            .nav a {
+                padding: 0 10px;
+            }
+            .nav.active {
+                display: flex;
+            }
+            .container {
+                width: 90%;
+                padding: 15px;
+                margin-top: 60px; /* Adjusted for header space */
+            }
+        }

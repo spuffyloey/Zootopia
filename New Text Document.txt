@@ -1,0 +1,46 @@
+<?php
+
+// Database connection parameters
+$servername = "localhost"; // Change this to your database server
+$username = "root"; // Change this to your database username
+$password = ""; // Change this to your database password
+$dbname = "zooticketingsystem"; // Change this to your database name
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get email and password from the form
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // SQL query to check if the email exists in the database
+    $sql = "SELECT * FROM accounts WHERE email='$email'";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // Email exists, now check if the password matches
+        $row = $result->fetch_assoc();
+        if ($password == $row['password']) {
+            // Redirect user to index.html if email and password match
+            header("Location: indexvisitor.php");
+            exit;
+        } else {
+            // If password does not match, show error message
+            echo "Password does not match. Please try again.";
+        }
+    } else {
+        // If email does not exist, show error message
+        echo "Email does not exist. Please try again.";
+    }
+}
+
+// Close database connection
+$conn->close();
+?>
